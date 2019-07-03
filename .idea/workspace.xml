@@ -289,6 +289,9 @@
       <find>war</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -375,6 +378,7 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -811,7 +815,7 @@
       <workItem from="1561973593755" duration="8844000" />
       <workItem from="1562029252457" duration="12953000" />
       <workItem from="1562047071222" duration="16531000" />
-      <workItem from="1562115318435" duration="595000" />
+      <workItem from="1562115318435" duration="599000" />
     </task>
     <servers />
   </component>
@@ -848,10 +852,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42391000" />
+    <option name="totallyTimeSpent" value="42395000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -872,7 +876,7 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.57834756" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="7" />

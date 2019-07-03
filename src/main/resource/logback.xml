@@ -53,6 +53,4 @@
     <logger name="org.springframework" additivity="false" level="error" />
     <logger name="org.apache" additivity="false" level="error" />
 
-
-
 </configuration>
