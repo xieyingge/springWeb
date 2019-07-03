@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.SysUserDao">
+  <resultMap id="baseResultMap" type="com.example.demo.entity.SysUser">
+    <id column="ID" property="id"/>
+    <result column="USER_NAME" property="userName" />
+    <result column="PASSWORD" property="password" />
+  </resultMap>
+
+
+    <insert id="insert" parameterType="SysUser">
+      <selectKey resultType='Long' keyProperty='id' keyColumn='ID' order='BEFORE'>
+        select SEQ_SYS_USER.nextval as id from dual
+      </selectKey>
+      insert into t_sys_user (
+      ID,
+      USER_NAME,
+      PASSWORD
+      ) values(
+      #{id , jdbcType= INTEGER},
+      #{userName, jdbcType= VARCHAR},
+      #{password, jdbcType= VARCHAR}
+      )
+  </insert>
+
+
+  <update id="updateUser">
+        update t_sys_user set USER_NAME = 'oop' where ID = 1
+    </update>
+
+  <select id="selectList" resultMap="baseResultMap">
+        SELECT * FROM  t_sys_user
+    </select>
+
+</mapper>
