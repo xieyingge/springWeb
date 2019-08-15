@@ -6,9 +6,9 @@
     </root>
     <schema id="2" parent="1" name="XYG">
       <ObjectId>91</ObjectId>
-      <IntrospectionTimestamp>2019-07-02.03:12:51</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2019-07-08.19:45:59</IntrospectionTimestamp>
       <CreatedTimestamp>2019-06-28.19:58:59</CreatedTimestamp>
-      <ModifiedTimestamp>2019-07-02.03:12:14</ModifiedTimestamp>
+      <ModifiedTimestamp>2019-07-08.19:45:51</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -130,26 +130,61 @@
       <SequenceIdentity>1</SequenceIdentity>
       <CacheSize>-2147483648</CacheSize>
     </sequence>
-    <table id="41" parent="2" name="T_SYS_USER">
+    <table id="41" parent="2" name="T_SYS_MENU">
+      <ObjectId>74824</ObjectId>
+      <CreatedTimestamp>2019-07-08.19:37:01</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-08.19:45:51</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="42" parent="2" name="T_SYS_USER">
       <ObjectId>74569</ObjectId>
       <CreatedTimestamp>2019-06-28.19:58:59</CreatedTimestamp>
       <ModifiedTimestamp>2019-06-28.19:58:59</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <column id="42" parent="41" name="ID">
+    <column id="43" parent="41" name="id">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="41" name="title">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <column id="45" parent="41" name="PARENT_ID">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 byte)|0s</DataType>
+    </column>
+    <index id="46" parent="41" name="SYS_C0011097">
+      <ObjectId>74826</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-07-08.19:38:22</CreatedTimestamp>
+      <ModifiedTimestamp>2019-07-08.19:38:22</ModifiedTimestamp>
+      <TablespaceName>XYGTABLESPACE</TablespaceName>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="47" parent="41" name="SYS_C0011097">
+      <ModifiedTimestamp>2019-07-08.19:38:22</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C0011097</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="48" parent="42" name="ID">
       <Position>1</Position>
       <DataType>NUMBER(2 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="43" parent="41" name="USER_NAME">
+    <column id="49" parent="42" name="USER_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(30 byte)|0s</DataType>
     </column>
-    <column id="44" parent="41" name="PASSWORD">
+    <column id="50" parent="42" name="PASSWORD">
       <Position>3</Position>
       <DataType>VARCHAR2(30 byte)|0s</DataType>
     </column>
-    <index id="45" parent="41" name="SYS_C0011047">
+    <index id="51" parent="42" name="SYS_C0011047">
       <ObjectId>74570</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2019-06-28.19:58:59</CreatedTimestamp>
@@ -158,7 +193,7 @@
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="46" parent="41" name="SYS_C0011047">
+    <key id="52" parent="42" name="SYS_C0011047">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2019-06-28.19:58:59</ModifiedTimestamp>
       <ColNames>ID</ColNames>
